@@ -21,7 +21,7 @@
 <body class="hold-transition login-page">
 <div class="login-box">
   <div class="login-logo">
-    <a href="<?php echo base_url(); ?>assets/index2.html"><b>Halaman Login</b></a>
+    <a href="<?php echo base_url(); ?>assets/index2.html"><b>Fullstack Web</b></a>
   </div>
   <!-- /.login-logo -->
   <?php
@@ -37,9 +37,10 @@
   ?>
   <div class="card">
     <div class="card-body login-card-body">
+    <p class="text-center">Halaman login</p>
       <form action="<?php echo base_url().'login/aksi' ?>" method="post">
         <div class="input-group mb-3">
-          <input type="text" class="form-control" placeholder="Username" name="username">
+          <input type="text" class="form-control" placeholder="Username" name="username" required="required">
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-envelope"></span>
@@ -48,7 +49,7 @@
           <?php echo form_error('username'); ?>
         </div>
         <div class="input-group mb-3">
-          <input type="password" class="form-control" placeholder="Password" name="password">
+          <input type="password" class="form-control" placeholder="Password" name="password" required="required">
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-lock"></span>
